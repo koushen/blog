@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a3d29b61-1df5-4bf9-9c7a-f07267fb25fd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Tag/index.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Tag/index.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -611,15 +610,15 @@
       <workItem from="1502280753920" duration="644000" />
       <workItem from="1502281417561" duration="1722000" />
       <workItem from="1502346470479" duration="12296000" />
-      <workItem from="1502434446108" duration="740000" />
+      <workItem from="1502434446108" duration="1939000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70933000" />
+    <option name="totallyTimeSpent" value="72132000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -870,7 +869,7 @@
         <state relative-caret-position="306">
           <caret line="24" column="44" lean-forward="false" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
           <folding>
-            <element signature="e#34#74#0#PHP" expanded="true" />
+            <element signature="e#34#74#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
