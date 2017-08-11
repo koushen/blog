@@ -22,11 +22,8 @@
             <tr>
                 <td>{{ tag.name }} </td>
                 <td>{{ tag.description }}</td>
-                {% if tag.entryTag | length == 0 %}
-                    <td><a class="btn btn-danger" href="{{ path("delete_tag", {'id': tag.id}) }}">Delete</a></td>
-                {% else %}
+                <td><a class="btn btn-danger" href="{{ path("delete_tag", {'id': tag.id}) }}">Delete</a></td>
                 <td>Etiqueta en uso</td>
-                {% endif %}
 
 
             </tr>
