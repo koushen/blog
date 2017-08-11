@@ -1,0 +1,46 @@
+{%  extends "AppBundle::layout.html.twig" %}
+
+{% block content %}
+
+    <h2>TAGS</h2>
+    {% if app.session.flashbag().get('status') is defined %}
+        {% for message in app.session.flashbag().get('status') %}
+            <div class="alert alert-success">{{ message }}</div>
+        {% endfor %}
+    {% endif %}
+    <div class="col-md-8 ">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Delete</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for tag in tags %}
+            <tr>
+                <td>{{ tag.name }} </td>
+                <td>{{ tag.description }}</td>
+                {% if tag.entryTag | length == 0 %}
+                    <td><a class="btn btn-danger" href="{{ path("delete_tag", {'id': tag.id}) }}">Delete</a></td>
+                {% else %}
+                <td>Etiqueta en uso</td>
+                {% endif %}
+
+
+            </tr>
+            {% endfor %}
+
+            </tbody>
+
+        </table>
+    </div>
+    <div class="clearfix"></div>
+    <div class="botonesTags">
+        <a href="{{ path("add_tag") }}" class="btn btn-success">Add tag</a>
+    </div>
+
+
+    {% endblock %}
+

@@ -1,0 +1,13 @@
+{%  extends "AppBundle::layout.html.twig" %}
+
+    {% block content %}
+
+            {% if app.user != null %}
+                <p>{{ app.user.username }}</p>
+            {% else %}
+                Inicia sesión o registrate en opciones pulsando la rueda y despues en Entrar!
+            {% endif %}
+
+        <h1>HOME PRINCIPAL!!</h1>
+    {% endblock %}
+

@@ -1,0 +1,68 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Entries
+ *
+ * @ORM\Table(name="ENTRIES", indexes={@ORM\Index(name="fk_ENTRIES_USERS_idx", columns={"user_id"}), @ORM\Index(name="fk_ENTRIES_CATEGORIES1_idx", columns={"category_id"})})
+ * @ORM\Entity
+ */
+class Entries
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="title", type="string", length=45, nullable=true)
+     */
+    private $title;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="content", type="string", length=250, nullable=true)
+     */
+    private $content;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="status", type="string", length=45, nullable=true)
+     */
+    private $status;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="image", type="string", length=45, nullable=true)
+     */
+    private $image;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="user_id", type="integer", nullable=true)
+     */
+    private $userId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="category_id", type="integer", nullable=true)
+     */
+    private $categoryId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+
+}
+

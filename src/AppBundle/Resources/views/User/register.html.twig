@@ -1,0 +1,20 @@
+{%  extends "AppBundle::layout.html.twig" %}
+
+{% block content %}
+
+        <div class="col-md-4 col-md-offset-1">
+            <h2>REGISTRATE</h2>
+            <hr>
+            {% if app.session.flashbag().get('status') is defined %}
+                {% for message in app.session.flashbag().get('status') %}
+                    <div class="alert alert-success">{{ message }}</div>
+                    <a href="{{ 'login' }}">Inicia sesión</a> ahora que te has registrado.
+                {% endfor %}
+            {% endif %}
+            {{ form_start(form,{'action':'', 'method':'POST'}) }}
+            {{ form_end(form) }}
+
+        </div>
+
+    {% endblock %}
+
